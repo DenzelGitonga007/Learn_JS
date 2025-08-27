@@ -41,6 +41,30 @@
     console.log("My favorite hobby is " + hobbies[0]); // Accessing array
     console.log("Person's name is " + person.name); // Accessing object/value property
 
+    // Functions:
+    function greet() {
+        console.log("Greeetings from JavaScript!");
+        return "Hello, " + friend_name + "!";
+        console.log("This won't run"); // Code after return won't run
+    }
+
+    greet(); // Calling function
+
+    // Function with parameters:
+    function greetUser(name) {
+        console.log("Hello " + name);
+    }
+    greetUser("Denzel");   // Hello Denzel
+    greetUser("Mary");     // Hello Mary
+
+    // Function with return value:
+    function add(a, b) {
+        return a + b;
+    }
+    add(5, 3); // 8
+    let sum = add(5, 3); // store return value from the function
+    console.log("5 + 3 = " + sum);   // 8
+
 
 </script>
 
