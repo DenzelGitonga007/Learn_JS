@@ -1,0 +1,11 @@
+DOM - Document Object Model 
+
+Find elements → e.g., document.getElementById("myBtn")
+
+Change content → element.textContent = "Hello!"
+
+Change style → element.style.color = "red"
+
+React to events → when a user clicks, types, or hovers
+
+Basically, DOM is the bridge between HTML/CSS (the structure & style) and JavaScript (the behavior).

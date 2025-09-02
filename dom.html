@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <!-- Text content  -->
+     <button id="btn">Click Me</button>
+    <p id="output"></p>
+
+    <script>
+    let button_ = document.getElementById("btn");
+
+    button_.addEventListener("click", function() {
+        document.getElementById("output").textContent = "You clicked the button!";
+    });
+    </script>
+
+
+
+    <!-- Change Text on Click -->
+    <p id="text">Hello!</p>
+    <button id="changeBtn">Change Text</button>
+
+    <script>
+    let btn = document.getElementById("changeBtn");
+    let para = document.getElementById("text");
+
+    btn.addEventListener("click", function() {
+        para.innerHTML = "You clicked the button, and I changed!";
+    });
+    </script>
+
+
+
+
+    <!-- Change Style on Hover -->
+    <p id="hoverText">Hover over me!</p>
+
+    <script>
+    let text = document.getElementById("hoverText");
+    text.addEventListener("mouseover", function() {
+        text.style.color = "red";
+    });
+
+    text.addEventListener("mouseout", function() {
+        text.style.color = "black";
+    });
+    </script>
+
+
+
+
+    <!-- Create a New Element on Click -->
+    <div id="container"></div>
+    <button id="addBtn">Add Paragraph</button>
+
+    <script>
+    let container = document.getElementById("container");
+    let button = document.getElementById("addBtn");
+
+    button.addEventListener("click", function() {
+        let newPara = document.createElement("p");
+        newPara.innerHTML = "I was added when you clicked!";
+        container.appendChild(newPara);
+    });
+    </script>
+
+
+    <!-- Live Example: Input Event -->
+    <input type="text" id="nameInput" placeholder="Type your name">
+    <p id="greeting"></p>
+
+    <script>
+    let input = document.getElementById("nameInput");
+
+    input.addEventListener("input", function() {
+        document.getElementById("greeting").textContent = "Hello, " + input.value;
+    });
+    </script>
+
+
+
+</body>
+</html>
