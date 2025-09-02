@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling | JS</title>
+</head>
+<body>
+
+    <!-- Inline Event Handling -->
+    <button onclick="alert('Button clicked!')">Inline Click Me</button>
+
+
+    <!-- Event Property (element.onclick) -->
+    <button id="myBtn">Element Click Me</button>
+
+    <script>
+        let btn = document.getElementById("myBtn");
+        btn.onclick = function() {
+            alert("You clicked the button!");
+        }
+    </script>
+
+
+    <!-- addEventListener() (best practice ) -->
+    <button id="btn">Eventlistener Click Me</button>
+
+    <script>
+        let button = document.getElementById("btn");
+        button.addEventListener("click", function() {
+            alert("Button was clicked!");
+        });
+    </script>
+
+
+
+
+
+<button id="btn">Click Me</button>
+<p id="result"></p>
+
+
+<script>
+  let btn = document.getElementById("btn");
+  btn.addEventListener("click", function() {
+    document.getElementById("result").textContent = "Button was clicked!";
+  });
+</script>
+
+</body>
+</html>
